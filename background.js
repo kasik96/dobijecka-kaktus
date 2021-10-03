@@ -38,7 +38,7 @@ const getDate = (text) => {
     todayDate.setHours(0, 0, 0, 0);
     var parts = rawDate.match(/(\d+)/g);
     const dobijeckaDate = new Date(parts[2], parts[1] - 1, parts[0]);
-    resolve({ date: dobijeckaDate, active: todayDate == dobijeckaDate });
+    resolve({ date: dobijeckaDate, active: todayDate.getTime() == dobijeckaDate.getTime() });
   });
 };
 

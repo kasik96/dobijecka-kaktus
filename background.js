@@ -66,6 +66,16 @@ function sendNotification() {
     getData.then((cleanText) => {
       const cleanTextJSON = JSON.stringify(cleanText);
 
+      getDate(cleanText).then((cleanDate) => {
+        if (cleanDate.valid) {
+          chrome.action.setBadgeText({ text: "JE!" });
+          chrome.action.setBadgeBackgroundColor({ color: "green" });
+        } else {
+          chrome.action.setBadgeText({ text: "NENI" });
+          chrome.action.setBadgeBackgroundColor({ color: "red" });
+        }
+      });
+
       if (!result || (result && result.latestDobijecka != cleanTextJSON)) {
         chrome.notifications.create("kaktus", {
           type: "basic",

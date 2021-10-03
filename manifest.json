@@ -1,7 +1,7 @@
 {
   "name": "Kaktus Dobíječka",
   "version": "0.1",
-  "description": "Rozšíření které vás upozorní když je Kaktus Dobíječka",
+  "description": "Rozšíření které vás upozorní na Aktivní dobíječku u Kaktusu",
   "manifest_version": 3,
   "permissions": ["notifications", "alarms", "background", "storage"],
   "action": {

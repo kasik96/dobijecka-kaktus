@@ -1,6 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
+  sendNotification();
   chrome.alarms.get("kaktus", (a) => {
-    if (!a) chrome.alarms.create("kaktus", { periodInMinutes: 1 });
+    if (!a) chrome.alarms.create("kaktus", { periodInMinutes: 30 });
   });
 });
 
@@ -38,7 +39,10 @@ const getDate = (text) => {
     todayDate.setHours(0, 0, 0, 0);
     var parts = rawDate.match(/(\d+)/g);
     const dobijeckaDate = new Date(parts[2], parts[1] - 1, parts[0]);
-    resolve({ date: dobijeckaDate, active: todayDate.getTime() == dobijeckaDate.getTime() });
+    resolve({
+      date: dobijeckaDate,
+      active: todayDate.getTime() == dobijeckaDate.getTime(),
+    });
   });
 };
 

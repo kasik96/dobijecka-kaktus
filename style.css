@@ -29,3 +29,15 @@ body {
 .privacy {
   text-align: center;
 }
+
+.privacy > p {
+  margin: 0px;
+}
+
+.lastUpdate {
+  text-align: center;
+}
+
+.lastUpdate > p {
+  display: inline;
+}

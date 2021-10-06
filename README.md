@@ -1,4 +1,4 @@
-# Kaktus Dobíječka - Chrome Web Extension
+# Kaktus Dobíječka - Chrome & Firefox Web Extension
 
 An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 

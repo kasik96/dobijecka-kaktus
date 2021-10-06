@@ -1,13 +1,24 @@
 * {
   font-family: "Pangolin", cursive;
   color: black;
-  margin: 10px;
-  padding-bottom: 5px;
 }
 
 body {
   background-color: #fdd900;
   width: 220px;
+  margin: 10px;
+}
+
+.textBig {
+  font-size: 24px;
+}
+
+.textMidsize {
+  font-size: 18px;
+}
+
+.textSmall {
+  font-size: 12px;
 }
 
 .header {
@@ -32,6 +43,11 @@ body {
 
 .privacy > p {
   margin: 0px;
+}
+
+#text {
+  margin-left: 10px;
+  margin-left: 10px;
 }
 
 .lastUpdate {

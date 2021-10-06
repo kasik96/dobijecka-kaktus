@@ -17,6 +17,6 @@ function writeDataToPopup(data) {
     ? "Dobíječka je aktivní!"
     : "Dobíječka je neaktivní!";
   document.getElementById("state").className = data.valid
-    ? "stateTrue"
-    : "stateFalse";
+    ? "textMid stateTrue"
+    : "textMid stateFalse";
 }

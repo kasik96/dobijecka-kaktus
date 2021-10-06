@@ -2,21 +2,16 @@
   "name": "Kaktus Dobíječka",
   "version": "0.1",
   "description": "Rozšíření které vás upozorní na Aktivní dobíječku u Kaktusu",
-  "manifest_version": 2,
-  "permissions": [
-    "notifications",
-    "alarms",
-    "background",
-    "storage",
-    "https://www.mujkaktus.cz/*"
-  ],
-  "browser_action": {
+  "manifest_version": 3,
+  "permissions": ["notifications", "alarms", "background", "storage"],
+  "action": {
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js",
+    "type": "module"
   },
+  "host_permissions": ["https://www.mujkaktus.cz/*"],
   "icons": {
     "16": "assets/images/icon16.png",
     "32": "assets/images/icon32.png",

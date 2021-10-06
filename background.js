@@ -71,7 +71,7 @@ function sendNotification() {
       const cleanTextJSON = JSON.stringify(cleanText);
 
       getDate(cleanText).then((cleanDate) => {
-        if (cleanDate.valid) {
+        if (cleanDate.active) {
           if (!result || (result && result.latestDobijecka != cleanTextJSON)) {
             chrome.notifications.create("kaktus", {
               type: "basic",
@@ -84,11 +84,11 @@ function sendNotification() {
           }
           chrome.storage.sync.set({ latestDobijecka: cleanTextJSON });
 
-          chrome.action.setBadgeText({ text: "JE!" });
-          chrome.action.setBadgeBackgroundColor({ color: "green" });
+          chrome.browserAction.setBadgeText({ text: "JE!" });
+          chrome.browserAction.setBadgeBackgroundColor({ color: "green" });
         } else {
-          chrome.action.setBadgeText({ text: "NENI" });
-          chrome.action.setBadgeBackgroundColor({ color: "red" });
+          chrome.browserAction.setBadgeText({ text: "NENI" });
+          chrome.browserAction.setBadgeBackgroundColor({ color: "red" });
         }
       });
     });

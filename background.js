@@ -87,8 +87,8 @@ function sendNotification() {
           chrome.browserAction.setBadgeText({ text: "✅" });
           chrome.browserAction.setBadgeBackgroundColor({ color: "transparent" });
         } else {
-          chrome.browserAction.setBadgeText({ text: "NENI" });
-          chrome.browserAction.setBadgeBackgroundColor({ color: "red" });
+          chrome.browserAction.setBadgeText({ text: "❌" });
+          chrome.browserAction.setBadgeBackgroundColor({ color: "transparent" });
         }
       });
     });

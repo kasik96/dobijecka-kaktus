@@ -73,19 +73,19 @@ function sendNotification() {
       getDate(cleanText).then((cleanDate) => {
         if (cleanDate.active) {
           if (!result || (result && result.latestDobijecka != cleanTextJSON)) {
-            chrome.notifications.create("kaktus", {
+            browser.notifications.create("kaktus", {
               type: "basic",
               iconUrl: "assets/images/icon128.png",
               title: "Kaktus Dobíječka!",
-              requireInteraction: true,
+              /* requireInteraction: true, */ //for chrome only
               message: cleanText,
               priority: 2,
             });
           }
           chrome.storage.sync.set({ latestDobijecka: cleanTextJSON });
 
-          chrome.browserAction.setBadgeText({ text: "JE!" });
-          chrome.browserAction.setBadgeBackgroundColor({ color: "green" });
+          chrome.browserAction.setBadgeText({ text: "✅" });
+          chrome.browserAction.setBadgeBackgroundColor({ color: "transparent" });
         } else {
           chrome.browserAction.setBadgeText({ text: "NENI" });
           chrome.browserAction.setBadgeBackgroundColor({ color: "red" });

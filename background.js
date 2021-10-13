@@ -1,17 +1,21 @@
-chrome.runtime.onInstalled.addListener(() => {
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
+
+browser.runtime.onInstalled.addListener(() => {
   sendNotification();
-  chrome.alarms.get("kaktus", (a) => {
-    if (!a) chrome.alarms.create("kaktus", { periodInMinutes: 30 });
+  browser.alarms.get("kaktus", (a) => {
+    if (!a) browser.alarms.create("kaktus", { periodInMinutes: 30 });
   });
 });
 
-chrome.alarms.onAlarm.addListener((alarm) => {
+browser.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name == "kaktus") {
     sendNotification();
   }
 });
 
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request && request.name === "GET_DATA_FOR_POPUP") {
     getData.then((cleanText) => {
       getDate(cleanText).then((cleanDate) => {
@@ -66,7 +70,7 @@ const getData = new Promise((resolve, reject) => {
 });
 
 function sendNotification() {
-  chrome.storage.sync.get(["latestDobijecka"], function (result) {
+  browser.storage.sync.get(["latestDobijecka"], function (result) {
     getData.then((cleanText) => {
       const cleanTextJSON = JSON.stringify(cleanText);
 
@@ -82,13 +86,13 @@ function sendNotification() {
               priority: 2,
             });
           }
-          chrome.storage.sync.set({ latestDobijecka: cleanTextJSON });
+          browser.storage.sync.set({ latestDobijecka: cleanTextJSON });
 
-          chrome.browserAction.setBadgeText({ text: "👍" });
-          chrome.browserAction.setBadgeBackgroundColor({ color: "#409128" });
+          browser.browserAction.setBadgeText({ text: "👍" });
+          browser.browserAction.setBadgeBackgroundColor({ color: "#409128" });
         } else {
-          chrome.browserAction.setBadgeText({ text: "👎" });
-          chrome.browserAction.setBadgeBackgroundColor({ color: "#912828" });
+          browser.browserAction.setBadgeText({ text: "👎" });
+          browser.browserAction.setBadgeBackgroundColor({ color: "#912828" });
         }
       });
     });

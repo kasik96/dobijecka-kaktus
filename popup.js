@@ -1,6 +1,10 @@
+if (typeof browser === "undefined") {
+  var browser = chrome;
+}
+
 window.onload = function () {
   document.getElementById("state").innerHTML = "Data se aktualizují...";
-  chrome.runtime.sendMessage(
+  browser.runtime.sendMessage(
     { name: "GET_DATA_FOR_POPUP" },
     function (response) {
       if (response && response.name == "GET_DATA_FOR_POPUP") {

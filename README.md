@@ -2,9 +2,9 @@
 
 An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 
-- ⏱️ Automatically sends a notification on the current day of "Dobíječka" promotion
-- 👍 Status icon showing the current status of "Dobíječka" promotion
-- ℹ️ Information directly in the extension about the "Dobíječka" promotion
+⏱️ &nbsp;Automatically sends a notification on the current day of "Dobíječka" promotion<br>
+👍 &nbsp;Status icon showing the current status of "Dobíječka" promotion<br>
+ℹ️ &nbsp;Information directly in the extension about the "Dobíječka" promotion
 
 [![Chrome](assets/chrome.png "Chrome")](https://chrome.google.com/webstore/detail/kaktus-dob%C3%ADje%C4%8Dka/cpinhgniabckpmpellibhbcoieoiibmk)
 [![Firefox](assets/firefox.png "Firefox")](https://addons.mozilla.org/cs/firefox/addon/kaktus-dob%C3%ADje%C4%8Dka/)
@@ -18,9 +18,9 @@ An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 
 💬  Description in Web Stores:
 
-    ⏱️ Automaticky zašle notifikaci v aktuální den dobíječky
-    👍 Statusová ikonka ukazující aktuální stav dobíječky
-    ℹ️ Info přímo v rozšíření o aktuální dobíječce
+    ⏱️ &nbsp;Automaticky zašle notifikaci v aktuální den dobíječky
+    👍 &nbsp;Statusová ikonka ukazující aktuální stav dobíječky
+    ℹ️ &nbsp;Info přímo v rozšíření o aktuální dobíječce
 
-    🇨🇿 Toto rozšíření neshromažďuje žádná osobní data
-    🇺🇸 No user data are collected by this extension
+    🇨🇿 &nbsp;Toto rozšíření neshromažďuje žádná osobní data
+    🇺🇸 &nbsp;No user data are collected by this extension

@@ -12,15 +12,17 @@ An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 
 **No user data are collected by this extension**
 
-📦  Package extension: 
+📦 &nbsp;Package extension: 
 
     zip -r dir.zip . -x ".*" -x "__MACOSX" -x "*.DS_Store"
 
-💬  Description in Web Stores:
+💬 &nbsp;Description in Web Stores:
 
-    ⏱️ &nbsp;Automaticky zašle notifikaci v aktuální den dobíječky
-    👍 &nbsp;Statusová ikonka ukazující aktuální stav dobíječky
-    ℹ️ &nbsp;Info přímo v rozšíření o aktuální dobíječce
+<pre>
+⏱️ Automaticky zašle notifikaci v aktuální den dobíječky
+👍 Statusová ikonka ukazující aktuální stav dobíječky
+ℹ️ Info přímo v rozšíření o aktuální dobíječce
 
-    🇨🇿 &nbsp;Toto rozšíření neshromažďuje žádná osobní data
-    🇺🇸 &nbsp;No user data are collected by this extension
+🇨🇿 Toto rozšíření neshromažďuje žádná osobní data
+🇺🇸 No user data are collected by this extension
+</pre>

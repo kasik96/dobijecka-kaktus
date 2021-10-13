@@ -8,7 +8,7 @@ An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 
 Chrome: https://chrome.google.com/webstore/detail/kaktus-dob%C3%ADje%C4%8Dka/cpinhgniabckpmpellibhbcoieoiibmk
 
-Firefox: 
+Firefox: https://addons.mozilla.org/cs/firefox/addon/kaktus-dob%C3%ADje%C4%8Dka/
 
 **No user data are collected by this extension**
 

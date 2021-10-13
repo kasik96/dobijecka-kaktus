@@ -12,11 +12,11 @@ Firefox:
 
 **No user data are collected by this extension**
 
-📦 Package extension: 
+📦  Package extension: 
 
     zip -r dir.zip . -x ".*" -x "__MACOSX" -x "*.DS_Store"
 
-💬 Description in Web Stores:
+💬  Description in Web Stores:
 
     ⏱️ Automaticky zašle notifikaci v aktuální den dobíječky
     👍 Statusová ikonka ukazující aktuální stav dobíječky

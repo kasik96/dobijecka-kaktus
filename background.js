@@ -81,7 +81,6 @@ function sendNotification() {
               type: "basic",
               iconUrl: "assets/images/icon128.png",
               title: "Kaktus Dobíječka!",
-              /* requireInteraction: true, */ //for chrome only
               message: cleanText,
               priority: 2,
             });

@@ -84,11 +84,11 @@ function sendNotification() {
           }
           chrome.storage.sync.set({ latestDobijecka: cleanTextJSON });
 
-          chrome.browserAction.setBadgeText({ text: "✅" });
-          chrome.browserAction.setBadgeBackgroundColor({ color: "transparent" });
+          chrome.browserAction.setBadgeText({ text: "👍" });
+          chrome.browserAction.setBadgeBackgroundColor({ color: "#409128" });
         } else {
-          chrome.browserAction.setBadgeText({ text: "❌" });
-          chrome.browserAction.setBadgeBackgroundColor({ color: "transparent" });
+          chrome.browserAction.setBadgeText({ text: "👎" });
+          chrome.browserAction.setBadgeBackgroundColor({ color: "#912828" });
         }
       });
     });

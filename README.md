@@ -6,9 +6,9 @@ An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 - Status icon showing the current status of "Dobíječka" promotion
 - Information directly in the extension about the "Dobíječka" promotion
 
-Chrome: https://chrome.google.com/webstore/detail/kaktus-dob%C3%ADje%C4%8Dka/cpinhgniabckpmpellibhbcoieoiibmk
-
-Firefox: https://addons.mozilla.org/cs/firefox/addon/kaktus-dob%C3%ADje%C4%8Dka/
+[![Chrome](assets/chrome.png "Chrome")](https://chrome.google.com/webstore/detail/kaktus-dob%C3%ADje%C4%8Dka/cpinhgniabckpmpellibhbcoieoiibmk)
+[![Firefox](assets/firefox.png "Firefox")](https://addons.mozilla.org/cs/firefox/addon/kaktus-dob%C3%ADje%C4%8Dka/)
+[![Brave](assets/brave.png "Brave")](https://brave.com/learn/installing-chrome-extensions/)
 
 **No user data are collected by this extension**
 

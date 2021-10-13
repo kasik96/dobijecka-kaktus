@@ -1,4 +1,4 @@
-# Kaktus Dobíječka - Chrome & Firefox Web Extension
+# Kaktus 🌵 Dobíječka - Chrome & Firefox Web Extension
 
 An extension that alerts you when "Dobíječka" promotion from Kaktus is active.
 
@@ -12,15 +12,15 @@ Firefox:
 
 **No user data are collected by this extension**
 
-Package extension: 
+📦 Package extension: 
 
     zip -r dir.zip . -x ".*" -x "__MACOSX" -x "*.DS_Store"
 
-Description in Web Stores:
+💬 Description in Web Stores:
 
-    - Automaticky zašle notifikaci v aktuální den dobíječky
-    - Statusová ikonka ukazující aktuální stav dobíječky
-    - Info přímo v rozšíření o aktuální dobíječce
-    
-    Toto rozšíření neshromažďuje žádná osobní data
-    No user data are collected by this extension
+    ⏱️ Automaticky zašle notifikaci v aktuální den dobíječky
+    👍 Statusová ikonka ukazující aktuální stav dobíječky
+    ℹ️ Info přímo v rozšíření o aktuální dobíječce
+
+    🇨🇿 Toto rozšíření neshromažďuje žádná osobní data
+    🇺🇸 No user data are collected by this extension
